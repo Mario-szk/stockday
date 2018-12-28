@@ -17,4 +17,5 @@
 PS一下:
 df.to_sql(tablename, con=engine, if_exists='fail',index=False,chunksize=1000)这句的chunksize=1000可以根据实际需要修改，但是不能设置为空。实测如果为空，写入数据表过多时会出现卡死。
 
+如果提示ModuleNotFoundError: No module named 'XXX'，则在cmd下运行pip install XXX,需要你安装有pip，pip就是一个安装管理工具，如何安装自行网上搜索。
 
